@@ -1,12 +1,7 @@
 /* Set the app attribute to your app's dash-delimited alias. */
-cloudflare-app[app="example"] {
+cloudflare-app[app="sitesearch"] {
   display: block;
   font-weight: bold;
   margin: .5em .2em;
   padding: .5em;
-}
-
-/* Use native elements when you'd like to inherit some styles from the page. */
-cloudflare-app[app="example"] input {
-  text-indent: 0;
 }
