@@ -1,0 +1,33 @@
+{
+  "name": "cf-sitesearch",
+  "version": "1.0.0",
+  "description": "This Cloudflare application lets you add a search box to your website.",
+  "main": "app.js",
+  "scripts": {
+    "lint": "standard --fix ./source/**/*.js || true"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rrainn/cf-sitesearch.git"
+  },
+  "author": "rrainn, Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rrainn/cf-sitesearch/issues"
+  },
+  "homepage": "https://github.com/rrainn/cf-sitesearch#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "^9.0.2"
+  },
+  "standard": {
+    "globals": [
+      "INSTALL",
+      "INSTALL_OPTIONS",
+      "INSTALL_SCOPE",
+      "INSTALL_PRODUCT",
+      "INSTALL_ID"
+    ]
+  }
+}

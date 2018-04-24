@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json.schemastore.org/install",
+  "resources": {
+    "body": [
+      {
+        "type": "style",
+        "src": "./source/app.css"
+      },
+      {
+        "type": "script",
+        "src": "./source/app.js"
+      }
+    ]
+  },
+  "preview": {
+    "handlers": [
+      {
+        "options": ["_default"],
+        "execute": "INSTALL_SCOPE.setOptions(INSTALL_OPTIONS)"
+      }
+    ]
+  },
+  "options": {
+    "properties": {
+      "location": {
+        "title": "Search Bar Location",
+        "description": "Where should the search bar appear?",
+        "order": 0,
+        "type": "object",
+        "format": "element",
+        "default": {
+          "selector": "body",
+          "method": "prepend"
+        }
+      },
+      "placeholder-field": {
+        "title": "Search Bar Placeholder",
+        "description": "What would you like the search bar placeholder to be?",
+        "type": "string",
+        "order": 1,
+        "default": "Search Query"
+      },
+      "styling-field": {
+        "title": "Search Bar Styling",
+        "description": "What styling would you like to be applied to the search bar?",
+        "type": "string",
+        "order": 2,
+        "default": "width: 200px;"
+      },
+      "placeholder-button": {
+        "title": "Search Button Text",
+        "description": "What would you like the search button text to be?",
+        "type": "string",
+        "order": 2,
+        "default": "Search"
+      },
+      "styling-button": {
+        "title": "Search Button Styling",
+        "description": "What styling would you like to be applied to the search button?",
+        "type": "string",
+        "order": 3,
+        "default": ""
+      },
+      "styling-form": {
+        "title": "Form Styling",
+        "description": "What styling would you like to be applied to the form?",
+        "type": "string",
+        "order": 4,
+        "default": ""
+      }
+    }
+  }
+}
