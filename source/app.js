@@ -13,8 +13,24 @@
 
     // Set the app attribute to your app's dash-delimited alias.
     element.setAttribute('app', 'sitesearch')
-    element.innerHTML = '<form><input type="text" id="searchboxq" placeholder="' + options["placeholder-field"] + '" style="' + options["styling-field"] + '"><input type="submit" value="' + options["placeholder-button"] + '" style="' + options["styling-button"] + '"></form>';
-    element.style.cssText = options["styling-form"]
+
+    var form = document.createElement("form");
+    form.style.cssText = options["styling-form"];
+    element.appendChild(form);
+
+    var inputSearchBox = document.createElement("input");
+    inputSearchBox.setAttribute('type', 'text');
+    inputSearchBox.setAttribute('id', 'searchboxq');
+    inputSearchBox.setAttribute('placeholder', options["placeholder-field"]);
+    inputSearchBox.style.cssText = options["styling-field"];
+    form.appendChild(inputSearchBox);
+
+    var submitButton = document.createElement("input");
+    submitButton.setAttribute('type', 'submit');
+    submitButton.setAttribute('value', options["placeholder-button"]);
+    submitButton.style.cssText = options["styling-button"];
+    form.appendChild(submitButton);
+
     element.addEventListener("submit", searchForm);
   }
 
