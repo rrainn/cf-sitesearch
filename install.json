@@ -43,7 +43,7 @@
       "styling-field": {
         "title": "Search Bar Styling",
         "description": "What styling would you like to be applied to the search bar?",
-        "type": "string",
+        "type": "textarea",
         "order": 2,
         "default": "width: 200px;"
       },
@@ -57,14 +57,14 @@
       "styling-button": {
         "title": "Search Button Styling",
         "description": "What styling would you like to be applied to the search button?",
-        "type": "string",
+        "type": "textarea",
         "order": 3,
         "default": ""
       },
       "styling-form": {
         "title": "Form Styling",
         "description": "What styling would you like to be applied to the form?",
-        "type": "string",
+        "type": "textarea",
         "order": 4,
         "default": ""
       }
