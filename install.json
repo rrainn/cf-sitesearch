@@ -46,7 +46,7 @@
         "type": "string",
         "format": "textarea",
         "order": 2,
-        "default": "width: 200px;"
+        "default": "width: 200px;\nmargin-left: -10px;\nborder-top-left-radius: 10px;\nborder-bottom-left-radius: 10px;\nborder: 0;\nheight: 40px;"
       },
       "placeholder-button": {
         "title": "Search Button Text",
@@ -61,7 +61,7 @@
         "type": "string",
         "format": "textarea",
         "order": 3,
-        "default": ""
+        "default": "border-top-right-radius: 10px;\nborder-bottom-right-radius: 10px;\nheight: 40px;\nborder: 0;"
       },
       "styling-form": {
         "title": "Form Styling",
@@ -69,7 +69,7 @@
         "type": "string",
         "format": "textarea",
         "order": 4,
-        "default": ""
+        "default": "margin: 5px;"
       }
     }
   }
